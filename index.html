@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Craps</title>
+        <link rel="stylesheet" href="css\craps.css">
+    </head>
+    <body class="format">
+
+        <div id="layout">
+
+            <h1 id="title">Craps!</h1>
+            <div id="die1"><img id="die1" src="img\1.png" /></div>
+            <div id="die2"><img id="die1" src="img\1.png" /></div>
+            
+            <label id="balance" name="balance"><strong>Balance: $100.00</strong></label>
+            <div id="ui">
+                <label for="textbox"><strong>Enter your bet:</strong></label>
+                <input id="textbox" name="textbox" placeholder="enter you bet"></input>
+                <button onclick="calculate_score()">Roll!</button>
+            </div>
+            <label id="status" name="status" hidden><strong></strong></label>
+            
+
+        </div>
+        <script src="js/craps.js"></script>
+    </body>
+</html>

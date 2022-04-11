@@ -1,0 +1,51 @@
+.format
+{
+    font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+#layout
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "header header header header"
+                ". image1 image2 ."
+                "balance balance balance balance"
+                "input input input input"
+                ". status status .";
+    gap: 10px;
+}
+img
+{
+    width: 200px;
+    height: 200px;
+}
+#title
+{
+    grid-area: header;
+    justify-self: center;
+}
+#die1
+{
+    grid-area: image1;
+    justify-self: right;
+}
+#die2
+{
+    grid-area: image2;
+    justify-self: left;
+}
+#ui
+{
+    grid-area: input;
+    justify-self: center;
+}
+#balance
+{
+    grid-area: balance;
+    justify-self: center ;
+}
+#status
+{
+    grid-area: status;
+    justify-self: center;
+}
